@@ -18,9 +18,10 @@ public class AuthWindow extends Application {
         stage.setTitle("URL Shortener");
         stage.setScene(scene);
 
-        String path = Paths.get("").toAbsolutePath().toString() ;
+        String path = Paths.get("").toAbsolutePath().toString() + "/icon.png" ;
 
-        stage.getIcons().add(new Image("D://Projects//URL Shortner//url-shortner//icon.png"));
+        stage.getIcons().add(new Image(path));
+
         System.out.println("Working Directory = " + System.getProperty("user.dir") + " and: " + path);
         stage.show();
     }
