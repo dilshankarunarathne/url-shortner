@@ -20,7 +20,7 @@
         <VBox >
             <GridPane alignment="CENTER" >
                 <Label text="Adf.ly User ID" alignment="CENTER_RIGHT"
-                            GridPane.rowIndex="0" GridPane.columnIndex="0" />
+                       GridPane.rowIndex="0" GridPane.columnIndex="0" />
                 <TextField fx:id="userId"
                             GridPane.rowIndex="0"  GridPane.columnIndex="1" />
 
