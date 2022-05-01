@@ -34,7 +34,10 @@ public class AuthWindowController {
 
         if (PUBLIC_KEY.equals("") || SECRET_KEY.equals("") ) {
             // TODO: error message
-            Alert alert = new Alert(Alert.AlertType.WARNING);
+//            Alert alert = new Alert(Alert.AlertType.WARNING);
+//            alert.setTitle("Warning");
+//            alert.setHeaderText("Are you sure?");
+//            alert.setContentText("Do you want to close the application?");
 
             statusLabel.setText ("Error: PUBLIC_KEY or SECRET_kEY was null !") ;
             return ;
