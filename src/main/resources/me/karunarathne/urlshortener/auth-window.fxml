@@ -42,7 +42,7 @@
                <padding>
                   <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
                </padding></Label>
-                <TextField fx:id="puk" alignment="CENTER_LEFT" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                <TextField fx:id="puk" alignment="CENTER_LEFT" prefWidth="122.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
                <GridPane.margin>
                   <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
                </GridPane.margin>
@@ -62,7 +62,7 @@
                   <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
                </padding>
                <GridPane.margin>
-                  <Insets bottom="10.0" right="10.0" top="10.0" />
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
                </GridPane.margin></TextField>
             <columnConstraints>
                <ColumnConstraints maxWidth="130.8" minWidth="85.80000000000001" prefWidth="117.80000000000001" />
@@ -81,7 +81,13 @@
             </padding>
             </GridPane>
 
-            <Button onAction="#authenticate" text="Authenticate" />
+            <Button onAction="#authenticate" text="Authenticate">
+            <VBox.margin>
+               <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+            </VBox.margin>
+            <padding>
+               <Insets bottom="5.0" right="5.0" top="5.0" />
+            </padding></Button>
         </VBox>
     </center>
 
