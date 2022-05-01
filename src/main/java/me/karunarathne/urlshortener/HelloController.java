@@ -1,4 +1,4 @@
-package me.karunarathne.urlshortener.urlshortner;
+package me.karunarathne.urlshortener ;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
