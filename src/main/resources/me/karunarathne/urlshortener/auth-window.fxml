@@ -21,8 +21,8 @@
             <GridPane alignment="CENTER" >
                 <Label text="Adf.ly User ID" alignment="CENTER_RIGHT"
                        GridPane.rowIndex="0" GridPane.columnIndex="0" />
-                <TextField fx:id="userId"
-                            GridPane.rowIndex="0"  GridPane.columnIndex="1" />
+                <TextField fx:id="userId" alignment="CENTER_LEFT"
+                           GridPane.rowIndex="0"  GridPane.columnIndex="1" />
 
                 <Label text="Adf.ly Public Key" alignment="CENTER_RIGHT"
                        GridPane.rowIndex="1" GridPane.columnIndex="0" />
