@@ -26,6 +26,6 @@ public class AuthWindowController {
     @FXML
     public void authenticate(ActionEvent actionEvent) {
         statusLabel.setText("Auth called for User: " + userId.getText());
-        
+
     }
 }
