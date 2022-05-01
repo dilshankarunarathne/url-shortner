@@ -21,7 +21,7 @@ public class APIWrapper {
     public static final String BASE_SCHEME = "https";
     public static final String BASE_HOST = "api.adf.ly";
     // TODO: Replace following constant value with your public api key.
-    public static final String PUBLIC_KEY = "";
+    public static String PUBLIC_KEY = "";
     // TODO: Replace following constant value with your user id.
     public static long USER_ID ;
     // TODO: Replace following constant value with your secret key.
@@ -35,7 +35,7 @@ public class APIWrapper {
 
     public APIWrapper(Long userId, String puk, String sk) {
         USER_ID = userId ;
-        PUBLIC_KEY = puk ;
+        PUBLIC_KEY = puk ; 
         rest = new RestClient(BASE_SCHEME, BASE_HOST);
     }
 
