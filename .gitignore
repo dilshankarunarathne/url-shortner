@@ -1,0 +1,3 @@
+
+*.class
+target/classes/me/karunarathne/urlshortener/urlshortner/hello-view.fxml
