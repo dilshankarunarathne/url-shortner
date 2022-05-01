@@ -9,6 +9,10 @@ public class Shorten {
         api = new APIWrapper();
     }
 
+    public Shorten() {
+        api = new APIWrapper();
+    }
+
     private String shorten(String[] urls, String domain, String adType, Long groupId) {
         return api.shorten(urls, domain, adType, groupId);
     }
