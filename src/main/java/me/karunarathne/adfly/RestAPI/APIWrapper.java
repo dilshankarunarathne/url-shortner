@@ -35,7 +35,7 @@ public class APIWrapper {
 
     public APIWrapper(Long userId, String puk, String sk) {
         USER_ID = userId ;
-        
+        PUBLIC_KEY = puk ;
         rest = new RestClient(BASE_SCHEME, BASE_HOST);
     }
 
