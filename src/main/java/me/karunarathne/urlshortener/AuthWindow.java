@@ -7,6 +7,7 @@ import javafx.scene.image.Image;
 import javafx.stage.Stage;
 
 import java.io.IOException;
+import java.nio.file.Paths;
 import java.util.Objects;
 
 public class AuthWindow extends Application {
@@ -17,10 +18,10 @@ public class AuthWindow extends Application {
         stage.setTitle("URL Shortener");
         stage.setScene(scene);
 
-        String path = System.getProperty("user.dir") + 
+        String path = Paths.get("").toAbsolutePath().toString() ;
 
         stage.getIcons().add(new Image("D://Projects//URL Shortner//url-shortner//icon.png"));
-        System.out.println("Working Directory = " + System.getProperty("user.dir"));
+        System.out.println("Working Directory = " + System.getProperty("user.dir") + " and: " + path);
         stage.show();
     }
 
