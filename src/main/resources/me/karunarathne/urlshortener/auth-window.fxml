@@ -18,8 +18,8 @@
 
     <center>
         <VBox >
-            <GridPane alignment="CENTER" padding="25.0">
-                <Label text="Adf.ly User ID" alignment="CENTER_RIGHT"
+            <GridPane alignment="CENTER" >
+                <Label text="Adf.ly User ID" alignment="CENTER_RIGHT" padding="20.0"
                        GridPane.rowIndex="0" GridPane.columnIndex="0" />
                 <TextField fx:id="userId" alignment="CENTER_LEFT"
                            GridPane.rowIndex="0"  GridPane.columnIndex="1" />
