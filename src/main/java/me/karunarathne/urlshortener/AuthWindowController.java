@@ -29,5 +29,6 @@ public class AuthWindowController {
         statusLabel.setText("Auth called for User: " + userId.getText());
         Long USER_ID = Long.parseLong (userId.getText ()) ;
         String PUBLIC_KEY = puk.getText() ;
+        String SECRET_KEY = sk.getText() ;
     }
 }
