@@ -27,6 +27,7 @@ public class AuthWindowController {
     @FXML
     public void authenticate(ActionEvent actionEvent) {
         statusLabel.setText("Auth called for User: " + userId.getText());
-        Long UID = Long.parseLong (userId.getText ()) ;
+        Long USER_ID = Long.parseLong (userId.getText ()) ;
+        String PUBLIC_KEY = puk.getText() ;
     }
 }
