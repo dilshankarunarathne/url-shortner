@@ -17,7 +17,7 @@ public class AuthWindow extends Application {
         stage.setTitle("URL Shortener");
         stage.setScene(scene);
 
-        stage.getIcons().add(new Image("/icon.png"));
+        stage.getIcons().add(new Image("icon.png"));
 
         stage.show();
     }
