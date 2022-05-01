@@ -40,7 +40,7 @@ public class AuthWindowController {
         shorten = new Shorten (USER_ID, PUBLIC_KEY, SECRET_KEY) ;
         statusLabel.setText ("Authentication status: Unknown") ;
 
-        String [] urls = {"https://pahe.ph/", "https://github.com/"} ;
-        System.out.println(shorten.shorten(urls) );
+//        String [] urls = {"https://pahe.ph/", "https://github.com/"} ;
+//        System.out.println(shorten.shorten(urls) );
     }
 }
