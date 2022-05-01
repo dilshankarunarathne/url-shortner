@@ -21,16 +21,20 @@
             <TextField fx:id="userId"
                         GridPane.rowIndex="0"  GridPane.columnIndex="1" />
 
-            <Label text="Adf.ly User ID"
-                        GridPane.rowIndex="0" GridPane.columnIndex="0" />
+            <Label text="Adf.ly Public Key"
+                        GridPane.rowIndex="1" GridPane.columnIndex="0" />
             <TextField fx:id="puk"
-                       GridPane.rowIndex="0"  GridPane.columnIndex="1" />
+                       GridPane.rowIndex="1"  GridPane.columnIndex="1" />
 
-            <Label text="Adf.ly User ID"
-                        GridPane.rowIndex="0" GridPane.columnIndex="0" />
+            <Label text="Adf.ly Secret Key"
+                        GridPane.rowIndex="2" GridPane.columnIndex="0" />
             <TextField fx:id="sk"
-                       GridPane.rowIndex="0"  GridPane.columnIndex="1" />
+                       GridPane.rowIndex="2"  GridPane.columnIndex="1" />
         </GridPane>
     </center>
+
+    <bottom>
+        <Label text="IDLE..." fx:id="statusLabel" />
+    </bottom>
 
 </BorderPane>
