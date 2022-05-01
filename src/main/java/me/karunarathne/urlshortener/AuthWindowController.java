@@ -2,6 +2,7 @@ package me.karunarathne.urlshortener ;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.scene.control.Alert;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import me.karunarathne.adfly.RestAPI.APIWrapper;
@@ -33,6 +34,8 @@ public class AuthWindowController {
 
         if (PUBLIC_KEY.equals("") || SECRET_KEY.equals("") ) {
             // TODO: error message
+            Alert alert = new Alert(Alert.AlertType.WARNING);
+
             statusLabel.setText ("Error: PUBLIC_KEY or SECRET_kEY was null !") ;
             return ;
         }
