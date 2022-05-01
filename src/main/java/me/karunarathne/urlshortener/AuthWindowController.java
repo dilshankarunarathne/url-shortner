@@ -4,6 +4,7 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
+import me.karunarathne.adfly.app.Shorten;
 
 public class AuthWindowController {
     @FXML
@@ -17,6 +18,7 @@ public class AuthWindowController {
     private TextField sk ;
 
     public AuthWindowController () {
+        Shorten shorten = new Shorten() ;
     }
 
     @FXML
