@@ -26,7 +26,7 @@
                        GridPane.rowIndex="0"  GridPane.columnIndex="1" />
 
             GridPane.rowIndex="0" GridPane.columnIndex="0" />
-            <TextField fx:id="userId"
+            <TextField fx:id="sk"
                        GridPane.rowIndex="0"  GridPane.columnIndex="1" />
         </GridPane>
     </center>
