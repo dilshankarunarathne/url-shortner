@@ -5,6 +5,8 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.layout.GridPane?>
 <?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.Button?>
 <BorderPane xmlns="http://javafx.com/javafx"
             xmlns:fx="http://javafx.com/fxml"
             fx:controller="me.karunarathne.urlshortener.AuthWindow"
@@ -15,22 +17,26 @@
     </top>
 
     <center>
-        <GridPane alignment="CENTER" >
-            <Label text="Adf.ly User ID"
-                        GridPane.rowIndex="0" GridPane.columnIndex="0" />
-            <TextField fx:id="userId"
-                        GridPane.rowIndex="0"  GridPane.columnIndex="1" />
+        <VBox >
+            <GridPane alignment="CENTER" >
+                <Label text="Adf.ly User ID"
+                            GridPane.rowIndex="0" GridPane.columnIndex="0" />
+                <TextField fx:id="userId"
+                            GridPane.rowIndex="0"  GridPane.columnIndex="1" />
 
-            <Label text="Adf.ly Public Key"
-                        GridPane.rowIndex="1" GridPane.columnIndex="0" />
-            <TextField fx:id="puk"
-                       GridPane.rowIndex="1"  GridPane.columnIndex="1" />
+                <Label text="Adf.ly Public Key"
+                            GridPane.rowIndex="1" GridPane.columnIndex="0" />
+                <TextField fx:id="puk"
+                           GridPane.rowIndex="1"  GridPane.columnIndex="1" />
 
-            <Label text="Adf.ly Secret Key"
-                        GridPane.rowIndex="2" GridPane.columnIndex="0" />
-            <TextField fx:id="sk"
-                       GridPane.rowIndex="2"  GridPane.columnIndex="1" />
-        </GridPane>
+                <Label text="Adf.ly Secret Key"
+                            GridPane.rowIndex="2" GridPane.columnIndex="0" />
+                <TextField fx:id="sk"
+                           GridPane.rowIndex="2"  GridPane.columnIndex="1" />
+            </GridPane>
+            
+            <Button text="Authenticate" onAction="#authenticate"/>
+        </VBox>
     </center>
 
     <bottom>
