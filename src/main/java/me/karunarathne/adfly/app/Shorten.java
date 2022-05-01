@@ -9,7 +9,7 @@ public class Shorten {
         api = new APIWrapper();
     }
 
-    public Shorten() {
+    public Shorten (Long userId, String puk, String sk) {
         api = new APIWrapper();
     }
 
