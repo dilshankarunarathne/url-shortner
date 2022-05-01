@@ -4,10 +4,11 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
+import me.karunarathne.adfly.RestAPI.APIWrapper;
 import me.karunarathne.adfly.app.Shorten;
 
 public class AuthWindowController {
-    Shorten shorten ;
+    APIWrapper apiWrapper ;
 
     @FXML
     private Label statusLabel ;
@@ -26,6 +27,6 @@ public class AuthWindowController {
     @FXML
     public void authenticate(ActionEvent actionEvent) {
         statusLabel.setText("Auth called for User: " + userId.getText());
-
+        Long UID = userId.getText()
     }
 }
