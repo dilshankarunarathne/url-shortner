@@ -21,6 +21,6 @@ public class AuthWindowController {
 
     @FXML
     public void authenticate(ActionEvent actionEvent) {
-        System.out.println("Auth called with " + userId.getText());
+        statusLabel.setText("Auth called with " + userId.getText());
     }
 }
