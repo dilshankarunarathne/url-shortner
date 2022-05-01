@@ -31,7 +31,7 @@
 
                 <Label text="Adf.ly Secret Key" alignment="CENTER_RIGHT"
                        GridPane.rowIndex="2" GridPane.columnIndex="0" />
-                <TextField fx:id="sk"
+                <TextField fx:id="sk" alignment="CENTER_LEFT"
                            GridPane.rowIndex="2"  GridPane.columnIndex="1" />
             </GridPane>
 
