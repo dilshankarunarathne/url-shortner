@@ -14,6 +14,7 @@ public class AuthWindow extends Application {
         Scene scene = new Scene(fxmlLoader.load(), 720, 480);
         stage.setTitle("URL Shortener");
         stage.setScene(scene);
+        
         stage.show();
     }
 
