@@ -1,46 +1,86 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.layout.BorderPane?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
 
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.layout.GridPane?>
-<?import javafx.scene.control.TextField?>
-<?import javafx.scene.layout.VBox?>
-<?import javafx.scene.control.Button?>
-<BorderPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="me.karunarathne.urlshortener.AuthWindowController"
-            prefHeight="400.0" prefWidth="600.0">
+<BorderPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="me.karunarathne.urlshortener.AuthWindowController">
 
     <top>
-        <Label fx:id="title" text="Authenticate to Adf.ly" />
+        <Label fx:id="title" text="Authenticate to Adf.ly" textAlignment="CENTER" wrapText="true" BorderPane.alignment="CENTER">
+         <font>
+            <Font name="Caladea" size="23.0" />
+         </font>
+         <BorderPane.margin>
+            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+         </BorderPane.margin></Label>
     </top>
 
     <center>
-        <VBox >
-            <GridPane alignment="CENTER" >
-                <Label text="Adf.ly User ID" alignment="CENTER_RIGHT" 
-                       GridPane.rowIndex="0" GridPane.columnIndex="0" />
-                <TextField fx:id="userId" alignment="CENTER_LEFT"
-                           GridPane.rowIndex="0"  GridPane.columnIndex="1" />
+        <VBox>
+            <GridPane alignment="CENTER">
+                <Label alignment="CENTER_RIGHT" text="Adf.ly User ID" GridPane.columnIndex="0" GridPane.rowIndex="0">
+               <GridPane.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </GridPane.margin>
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding></Label>
+                <TextField fx:id="userId" alignment="CENTER_LEFT" GridPane.columnIndex="1" GridPane.rowIndex="0">
+               <GridPane.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </GridPane.margin>
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding></TextField>
 
-                <Label text="Adf.ly Public Key" alignment="CENTER_RIGHT"
-                       GridPane.rowIndex="1" GridPane.columnIndex="0" />
-                <TextField fx:id="puk" alignment="CENTER_LEFT"
-                           GridPane.rowIndex="1"  GridPane.columnIndex="1" />
+                <Label alignment="CENTER_RIGHT" text="Adf.ly Public Key" GridPane.columnIndex="0" GridPane.rowIndex="1">
+               <GridPane.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </GridPane.margin>
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding></Label>
+                <TextField fx:id="puk" alignment="CENTER_LEFT" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <GridPane.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </GridPane.margin>
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding></TextField>
 
-                <Label text="Adf.ly Secret Key" alignment="CENTER_RIGHT"
-                       GridPane.rowIndex="2" GridPane.columnIndex="0" />
-                <TextField fx:id="sk" alignment="CENTER_LEFT"
-                           GridPane.rowIndex="2"  GridPane.columnIndex="1" />
+                <Label alignment="CENTER_RIGHT" text="Adf.ly Secret Key" GridPane.columnIndex="0" GridPane.rowIndex="2">
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+               <GridPane.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </GridPane.margin></Label>
+                <TextField fx:id="sk" alignment="CENTER_LEFT" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <columnConstraints>
+               <ColumnConstraints maxWidth="130.8" minWidth="85.80000000000001" prefWidth="117.80000000000001" />
+               <ColumnConstraints maxWidth="152.60000000000002" minWidth="107.60000000000002" prefWidth="120.60000000000002" />
+            </columnConstraints>
+            <rowConstraints>
+               <RowConstraints />
+               <RowConstraints />
+               <RowConstraints />
+            </rowConstraints>
+            <VBox.margin>
+               <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+            </VBox.margin>
+            <padding>
+               <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+            </padding>
             </GridPane>
 
-            <Button text="Authenticate" onAction="#authenticate"/>
+            <Button onAction="#authenticate" text="Authenticate" />
         </VBox>
     </center>
 
     <bottom>
-        <Label text="IDLE..." fx:id="statusLabel" />
+        <Label fx:id="statusLabel" text="IDLE..." />
     </bottom>
 
 </BorderPane>
