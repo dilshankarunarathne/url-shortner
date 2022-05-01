@@ -23,13 +23,19 @@ public class APIWrapper {
     // TODO: Replace following constant value with your public api key.
     public static final String PUBLIC_KEY = "";
     // TODO: Replace following constant value with your user id.
-    public static final long USER_ID = 0;
+    public static long USER_ID ;
     // TODO: Replace following constant value with your secret key.
     private static final String SECRET_KEY = "";
 
     private RestClient rest;
 
     public APIWrapper() {
+        rest = new RestClient(BASE_SCHEME, BASE_HOST);
+    }
+
+    public APIWrapper(Long userId, String puk, String sk) {
+        USER_ID = userId ;
+        
         rest = new RestClient(BASE_SCHEME, BASE_HOST);
     }
 
