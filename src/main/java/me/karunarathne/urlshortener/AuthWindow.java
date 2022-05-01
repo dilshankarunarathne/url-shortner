@@ -7,6 +7,7 @@ import javafx.scene.image.Image;
 import javafx.stage.Stage;
 
 import java.io.IOException;
+import java.util.Objects;
 
 public class AuthWindow extends Application {
     @Override
@@ -16,7 +17,7 @@ public class AuthWindow extends Application {
         stage.setTitle("URL Shortener");
         stage.setScene(scene);
 
-        Image applicationIcon = new Image(getClass().getResourceAsStream("dukes_36x36.png"));
+        Image applicationIcon = new Image(Objects.requireNonNull(getClass().getResourceAsStream("icon.png")));
         stage.getIcons().add (applicationIcon) ;
 
         stage.show();
