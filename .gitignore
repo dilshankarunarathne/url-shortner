@@ -1,3 +1,7 @@
 
 *.class
 target/classes/me/karunarathne/urlshortener/urlshortner/hello-view.fxml
+target/classes/me/karunarathne/urlshortener/auth-window.fxml
+target/classes/me/karunarathne/urlshortener/hello-view.fxml
+target/classes/me/karunarathne/urlshortener/hello-view.fxml
+target/classes/me/karunarathne/urlshortener/hello-view.fxml

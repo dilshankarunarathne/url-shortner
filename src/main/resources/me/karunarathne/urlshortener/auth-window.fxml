@@ -9,7 +9,7 @@
 <?import javafx.scene.control.Button?>
 <BorderPane xmlns="http://javafx.com/javafx"
             xmlns:fx="http://javafx.com/fxml"
-            fx:controller="me.karunarathne.urlshortener.AuthWindow"
+            fx:controller="me.karunarathne.urlshortener.AuthWindowController"
             prefHeight="400.0" prefWidth="600.0">
 
     <top>
