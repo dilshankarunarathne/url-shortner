@@ -34,6 +34,7 @@ public class AuthWindowController {
         if (PUBLIC_KEY.equals("") || SECRET_KEY.equals("") ) {
             // TODO: error message
             statusLabel.setText ("Error: PUBLIC_KEY or SECRET_kEY was null !") ;
+            return ;
         }
 
         shorten = new Shorten (USER_ID, PUBLIC_KEY, SECRET_KEY) ;
