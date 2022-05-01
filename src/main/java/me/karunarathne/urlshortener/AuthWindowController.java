@@ -7,6 +7,8 @@ import javafx.scene.control.TextField;
 import me.karunarathne.adfly.app.Shorten;
 
 public class AuthWindowController {
+    Shorten shorten ;
+
     @FXML
     private Label statusLabel ;
 
@@ -18,7 +20,7 @@ public class AuthWindowController {
     private TextField sk ;
 
     public AuthWindowController () {
-        Shorten shorten = new Shorten() ;
+
     }
 
     @FXML
