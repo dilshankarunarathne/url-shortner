@@ -20,7 +20,7 @@ public class AuthWindow extends Application {
 
         String path = Paths.get("").toAbsolutePath().toString() + "/src/main/resources/me/karunarathne/urlshortener/icon.png" ;
         stage.getIcons().add(new Image(path));
-        
+
         stage.show();
     }
 
