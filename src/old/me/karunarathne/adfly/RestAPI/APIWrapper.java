@@ -21,11 +21,11 @@ public class APIWrapper {
     public static final String BASE_SCHEME = "https";
     public static final String BASE_HOST = "api.adf.ly";
     // TODO: Replace following constant value with your public api key.
-    public static final String PUBLIC_KEY = "b9f5032afa239e78c30ed3dd0887b4d5";
+    public static final String PUBLIC_KEY = "";
     // TODO: Replace following constant value with your user id.
-    public static final long USER_ID = 11135443;
+    public static final long USER_ID = 0;
     // TODO: Replace following constant value with your secret key.
-    private static final String SECRET_KEY = "f7e3328a-bafc-4bae-bf96-6cdd69a1215e";
+    private static final String SECRET_KEY = "";
 
     private RestClient rest;
 
