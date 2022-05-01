@@ -37,6 +37,6 @@ public class AuthWindowController {
         }
 
         apiWrapper = new APIWrapper (USER_ID, PUBLIC_KEY, SECRET_KEY) ;
-        statusLabel.setText () ;
+        statusLabel.setText ("Authentication status: Unknown") ;
     }
 }
