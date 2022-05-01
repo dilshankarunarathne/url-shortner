@@ -15,8 +15,10 @@ public class AuthWindow extends Application {
         Scene scene = new Scene(fxmlLoader.load(), 720, 480);
         stage.setTitle("URL Shortener");
         stage.setScene(scene);
-        Image icon = new Image( getClass().getResourceAsStream ("icon.png"));
-        stage.getIcons().add(icon);
+
+        Image applicationIcon = new Image(getClass().getResourceAsStream("dukes_36x36.png"));
+        stage.getIcons().add (applicationIcon) ;
+
         stage.show();
     }
 
