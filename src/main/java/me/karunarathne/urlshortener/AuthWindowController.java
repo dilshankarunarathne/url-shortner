@@ -30,10 +30,12 @@ public class AuthWindowController {
         Long USER_ID = Long.parseLong (userId.getText ()) ;
         String PUBLIC_KEY = puk.getText() ;
         String SECRET_KEY = sk.getText() ;
-        
+
         if (PUBLIC_KEY.isEmpty() || SECRET_KEY.isEmpty()) {
             // TODO: error message
             statusLabel.setText ("Error: PUBLIC_KEY or SECRET_kEY was null !") ;
         }
+
+        apiWrapper 
     }
 }
