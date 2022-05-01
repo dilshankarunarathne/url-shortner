@@ -8,7 +8,7 @@ import me.karunarathne.adfly.RestAPI.APIWrapper;
 import me.karunarathne.adfly.app.Shorten;
 
 public class AuthWindowController {
-    APIWrapper apiWrapper ;
+    Shorten shorten ;
 
     @FXML
     private Label statusLabel ;
@@ -36,7 +36,7 @@ public class AuthWindowController {
             statusLabel.setText ("Error: PUBLIC_KEY or SECRET_kEY was null !") ;
         }
 
-        apiWrapper = new APIWrapper (USER_ID, PUBLIC_KEY, SECRET_KEY) ;
+        shorten = new Shorten (USER_ID, PUBLIC_KEY, SECRET_KEY) ;
         statusLabel.setText ("Authentication status: Unknown") ;
     }
 }
