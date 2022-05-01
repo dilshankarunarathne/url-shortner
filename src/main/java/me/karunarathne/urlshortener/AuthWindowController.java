@@ -36,6 +36,6 @@ public class AuthWindowController {
             statusLabel.setText ("Error: PUBLIC_KEY or SECRET_kEY was null !") ;
         }
 
-        apiWrapper 
+        apiWrapper = new APIWrapper () ;
     }
 }
