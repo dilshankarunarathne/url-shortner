@@ -18,7 +18,7 @@
 
     <center>
         <VBox >
-            <GridPane alignment="CENTER" >
+            <GridPane alignment="CENTER" padding="25.0">
                 <Label text="Adf.ly User ID" alignment="CENTER_RIGHT"
                        GridPane.rowIndex="0" GridPane.columnIndex="0" />
                 <TextField fx:id="userId" alignment="CENTER_LEFT"
