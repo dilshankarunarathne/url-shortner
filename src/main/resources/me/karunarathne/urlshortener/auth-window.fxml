@@ -3,6 +3,8 @@
 <?import javafx.scene.layout.BorderPane?>
 
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.TextField?>
 <BorderPane xmlns="http://javafx.com/javafx"
             xmlns:fx="http://javafx.com/fxml"
             fx:controller="me.karunarathne.urlshortener.AuthWindow"
@@ -11,5 +13,22 @@
     <top>
         <Label fx:id="title" text="Authenticate to Adf.ly" />
     </top>
+
+    <center>
+        <GridPane alignment="CENTER" >
+            <Label text="Adf.ly User ID"
+                        GridPane.rowIndex="0" GridPane.columnIndex="0" />
+            <TextField fx:id="userId"
+                        GridPane.rowIndex="0"  GridPane.columnIndex="1" />
+
+            GridPane.rowIndex="0" GridPane.columnIndex="0" />
+            <TextField fx:id="puk"
+                       GridPane.rowIndex="0"  GridPane.columnIndex="1" />
+
+            GridPane.rowIndex="0" GridPane.columnIndex="0" />
+            <TextField fx:id="userId"
+                       GridPane.rowIndex="0"  GridPane.columnIndex="1" />
+        </GridPane>
+    </center>
 
 </BorderPane>
