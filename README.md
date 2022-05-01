@@ -1,2 +1,3 @@
 # url-shortner
- A GUI Java application for shortening URLs. 
+
+A GUI Java application for shortening URLs. 
