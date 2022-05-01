@@ -26,7 +26,7 @@
 
                 <Label text="Adf.ly Public Key" alignment="CENTER_RIGHT"
                        GridPane.rowIndex="1" GridPane.columnIndex="0" />
-                <TextField fx:id="puk"
+                <TextField fx:id="puk" alignment="CENTER_LEFT"
                            GridPane.rowIndex="1"  GridPane.columnIndex="1" />
 
                 <Label text="Adf.ly Secret Key" alignment="CENTER_RIGHT"
