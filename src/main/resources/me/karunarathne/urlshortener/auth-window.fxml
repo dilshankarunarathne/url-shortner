@@ -9,7 +9,7 @@
             prefHeight="400.0" prefWidth="600.0">
 
     <top>
-        <Label fx:id="title"
+        <Label fx:id="title" text="Authenticate to Adf.ly" />
     </top>
 
 </BorderPane>
