@@ -4,6 +4,6 @@ module me.karunarathne.urlshortener.urlshortner {
 
     requires org.kordamp.bootstrapfx.core;
 
-    opens me.karunarathne.urlshortener.urlshortner to javafx.fxml;
-    exports me.karunarathne.urlshortener.urlshortner;
+    opens me.karunarathne.urlshortener to javafx.fxml;
+    exports me.karunarathne.urlshortener ;
 }
