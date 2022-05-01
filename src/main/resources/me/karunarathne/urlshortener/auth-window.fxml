@@ -29,8 +29,8 @@
                 <TextField fx:id="puk"
                            GridPane.rowIndex="1"  GridPane.columnIndex="1" />
 
-                <Label text="Adf.ly Secret Key"
-                            GridPane.rowIndex="2" GridPane.columnIndex="0" />
+                <Label text="Adf.ly Secret Key" alignment="CENTER_RIGHT"
+                       GridPane.rowIndex="2" GridPane.columnIndex="0" />
                 <TextField fx:id="sk"
                            GridPane.rowIndex="2"  GridPane.columnIndex="1" />
             </GridPane>
