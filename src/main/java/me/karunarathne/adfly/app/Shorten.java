@@ -10,7 +10,7 @@ public class Shorten {
     }
 
     public Shorten (Long userId, String puk, String sk) {
-        api = new APIWrapper();
+        api = new APIWrapper(userId, puk, sk) ;
     }
 
     private String shorten(String[] urls, String domain, String adType, Long groupId) {
