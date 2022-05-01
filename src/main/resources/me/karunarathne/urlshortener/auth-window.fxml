@@ -92,10 +92,13 @@
     </center>
 
     <bottom>
-        <Label fx:id="statusLabel" prefHeight="18.0" prefWidth="320.0" text="IDLE...">
+        <Label fx:id="statusLabel" prefHeight="18.0" prefWidth="320.0" text="IDLE..." wrapText="true">
          <padding>
             <Insets bottom="5.0" left="20.0" right="20.0" top="5.0" />
-         </padding></Label>
+         </padding>
+         <font>
+            <Font name="Consolas Italic" size="14.0" />
+         </font></Label>
     </bottom>
 
 </BorderPane>
